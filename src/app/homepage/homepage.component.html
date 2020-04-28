@@ -1,0 +1,30 @@
+<div class="row" style="text-align: center; margin-top: 5%; margin-bottom: 5%;" *ngFor="let item of values">
+        <div class="col-5">
+            <img src="https://i.ibb.co/gW76ynv/5.png" *ngIf="item.value > '0' && item.value <= '25'">
+            <img src="https://i.ibb.co/dckk5TL/4.png" *ngIf="item.value > '25' && item.value <= '50'">
+            <img src="https://i.ibb.co/7CTNYZy/3.png" *ngIf="item.value > '50' && item.value <= '100'">
+            <img src="https://i.ibb.co/9ysCXH6/2.png" *ngIf="item.value > '100' && item.value <= '200'">
+            <img src="https://i.ibb.co/6PncCKD/1.png" *ngIf="item.value > '200'">
+        </div>
+        <div class="col-6" style="align-self: center;">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="aqi border border-dark display-3" style="padding: 20%; color: rgb(255, 0, 255);"> {{item.value}}</h1>
+                </div>
+                <div class="col-6" style="align-self: center;">
+                    <h2 style="color: rgb(0, 247, 255)" *ngIf="item.value > '0' && item.value <= '25'"> คุณภาพอากาศดีมาก</h2>
+                    <h2 style="color: rgb(0, 255, 0)" *ngIf="item.value > '25' && item.value <= '50'"> คุณภาพอากาศดี</h2>
+                    <h2 style="color: rgb(255, 255, 0)" *ngIf="item.value > '50' && item.value <= '100'"> ปานกลาง</h2>
+                    <h2 style="color: orange" *ngIf="item.value > '100' && item.value <= '200'"> เริ่มมีผลกระทบต่อสุขภาพ</h2>
+                    <h2 style="color: red" *ngIf="item.value > '200'"> มีผลกระทบต่อสุขภาพ!!</h2>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="container" style="text-align: center;">
+    <h3 style="margin-top: 2%; margin-bottom: 3%;">เกณฑ์การวัดค่าฝุ่น</h3>
+    <img src="https://cdn.discordapp.com/attachments/698884118636789810/704711502510424154/unknown.png">
+    <p></p>
+    <h3><a href="http://air4thai.pcd.go.th/webV2/aqi_info.php">ที่มา : ข้อมูลดัชนีคุณภาพอากาศ - กองจัดการคุณภาพอากาศและเสียง</a></h3>
+</div>

@@ -1,0 +1,30 @@
+
+.background{
+    background: url('https://www.khaosod.co.th/wpapp/uploads/2018/12/c.files_.bbci_.co_.uk_104904161_pam_4674-16e84e56dd2f3be48a5b1222d0f5de176446c31b.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 150vh;
+    min-height: 600px;
+}
+.squreBG{
+    background-color: #fdfd96;
+}
+.whitebg{
+    background-color: rgba(207, 216, 224, 0.521);
+
+}
+.col-12{
+    padding-top: 12px;
+}
+.littlepadding{
+    padding-top: 20px;
+}
+.card-body{
+    width: auto;
+    height: 600px;
+}
+.mgl{
+    margin-left: 10px;
+}
